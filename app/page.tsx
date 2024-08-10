@@ -83,14 +83,14 @@ const Skill = () => {
       <div className="flex flex-row justify-center">
         <div className="talent-item marginlarge">
           <h2 style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>Mathematics</h2>
-          <img src="/mathimg.jpg" alt="Mathematics" className="justify-center" style={{ width: "100px", height: "150px" }} />
+          <Image src="/mathimg.jpg" alt="Mathematics" className="justify-center" style={{ width: "100px", height: "150px" }} />
           <p>My math skills is on a mid to high level for 1st year college student, I'm quite confident with it although not to the point 
             where I can say I'm a math genius
           </p>
         </div>
         <div className="talent-item marginlarge">
           <h2 style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>Memorizing</h2>
-          <img src="/memorizing.png" alt="Memorizing" style={{ width: "100px", height: "150px" }} />
+          <Image src="/memorizing.png" alt="Memorizing" style={{ width: "100px", height: "150px" }} />
           <p>I can memorize something fast if I deem it something important enough.</p>
         </div>
       </div>
@@ -106,7 +106,7 @@ const Portfolio = () => {
       <p className="text-white pl-10">Check out my project:</p>
       <ul className="text-white flex justify-center">
         <li className="marginlarge">
-          <img src="/project1.jpg" alt="Project 1" className="items-center" style={{ width: "200px", height: "200px" }} />
+          <Image src="/project1.jpg" alt="Project 1" className="items-center" style={{ width: "200px", height: "200px" }} />
           <p>One of my team "Weapon Creation" project for the GST Fest 23, it was making some props for cosplay.</p>
         </li>
       </ul>
