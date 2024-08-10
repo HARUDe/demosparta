@@ -1,5 +1,5 @@
-// Import required modules
-import Image from "next/image";
+
+import Image  from "next/image";
 import Link from "next/link";
 
 // Home component
@@ -81,21 +81,33 @@ const Skill = () => {
     <div className="bg-blue-900 justify-center" style={{ cursor: "url(/cursorblues.png), auto"}}>
       <h1 className="text-white text-4xl font-bold mb-4" style={{ fontFamily: "sans-serif", textAlign: "center" }}>My Talents and Skills</h1>
       <div className="flex flex-row justify-center">
-        <div className="talent-item marginlarge">
-          <h2 style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>Mathematics</h2>
-          <Image src="/mathimg.jpg" alt="Mathematics" className="justify-center" style={{ width: "100px", height: "150px" }} />
-          <p>My math skills is on a mid to high level for 1st year college student, I'm quite confident with it although not to the point 
-            where I can say I'm a math genius
-          </p>
-        </div>
-        <div className="talent-item marginlarge">
-          <h2 style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>Memorizing</h2>
-          <Image src="/memorizing.png" alt="Memorizing" style={{ width: "100px", height: "150px" }} />
-          <p>I can memorize something fast if I deem it something important enough.</p>
-        </div>
+      <div className="talent-item marginlarge">
+        <h2 style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>Mathematics</h2>  
+        <Image
+        src="/mathimg.jpg"
+        alt="Mathematics"
+        width={300}
+        height={450}
+        className="justify-center"
+        />
+        <p>My math skills is on a mid to high level for 1st year college student, I'm quite confident with it although not to the point 
+        where I can say I'm a math genius
+        </p>
+      </div>
+      <div className="talent-item marginlarge">
+        <h2 style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>Memorizing</h2>
+        <Image
+        src="/memorizing.png"
+        alt="Memorizing"
+        width={300}
+        height={450}
+        className="justify-center"
+        />
+        <p>I can memorize something fast if I deem it something important enough.</p>
+      </div>
       </div>
     </div>
-  );
+    );
 };
 
 // Portfolio component
@@ -106,7 +118,13 @@ const Portfolio = () => {
       <p className="text-white pl-10">Check out my project:</p>
       <ul className="text-white flex justify-center">
         <li className="marginlarge">
-          <Image src="/project1.jpg" alt="Project 1" className="items-center" style={{ width: "200px", height: "200px" }} />
+          <Image 
+          src="/project1.jpg" 
+          alt="Project 1" 
+          width={540}
+          height={810}
+          className="items-center"
+          />
           <p>One of my team "Weapon Creation" project for the GST Fest 23, it was making some props for cosplay.</p>
         </li>
       </ul>
